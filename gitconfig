@@ -1,0 +1,43 @@
+# Filename: .gitconfig
+
+[color]
+    branch = auto
+    diff = auto
+    log = auto
+    interactive = auto
+    pager = true
+    status = auto
+    ui = true
+
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = red
+
+[log]
+    decorate = auto
+
+[push]
+    default = current
+
+[core]
+    autocrlf = input
+    editor = vim
+    excludesfile = $HOME/.gitignore
+    ignorecase = false
+    pager = less -FRSX
+
+[alias]
+    ci = commit
+    co = checkout
+    st = status -sb
+    lg = log --graph --pretty-format=:''
+
+[merge]
+    keepBackup = false
+    tool = p4merge
+
+[mergetool "p4merge"]
+    cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE" "$PWD/$MERGED"
+    keepBackup = false
+    keepTemporaries = false
