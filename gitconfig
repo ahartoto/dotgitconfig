@@ -31,7 +31,7 @@
     ci = commit
     co = checkout
     st = status -sb
-    lg = log --graph --pretty-format=:''
+    lg = log --graph --pretty=format:'%C(yellow)%h%C(auto)%d%Creset %s %C(white)- %an, %ar%Creset'
 
 [merge]
     keepBackup = false
@@ -41,3 +41,6 @@
     cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE" "$PWD/$MERGED"
     keepBackup = false
     keepTemporaries = false
+[user]
+	name = Alex Hartoto
+	email = ahartoto@gmail.com
