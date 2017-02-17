@@ -14,6 +14,9 @@
     changed = yellow
     untracked = red
 
+[diff]
+    wsErrorHighlight = all
+
 [log]
     decorate = auto
 
@@ -42,5 +45,5 @@
     keepBackup = false
     keepTemporaries = false
 [user]
-	name = Alex Hartoto
-	email = ahartoto@gmail.com
+    name = Alex Hartoto
+    email = ahartoto@gmail.com
